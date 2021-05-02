@@ -1,0 +1,65 @@
+.btnInscrire{
+    background-color: #FF5160;
+    color: white;
+    height: 55px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+}
+.btnInscrire:hover{
+    color:#FF5160;
+    height: 55px;
+    background-color: whitesmoke;
+    transition: all 0.4s ease-in-out;
+}
+
+.form_input {
+    color: #6c757d;
+    height: 50px;
+    padding: 0 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #6c757d;
+    position: relative;
+}
+
+label {
+    position: absolute;
+    left: 1rem;
+    top: 0.8rem;
+    padding: 2px;
+    color: #6c757d;
+    cursor: text;
+    background-color: white;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+}
+
+.form_input:focus ~ .form_label,
+.form_input:not(:placeholder-shown).form_input:not(:focus) ~ .form_label {
+  top: -14px;
+  font-size: 0.8rem;
+  left: 0.8rem;
+}
+
+.form_input:focus {
+    outline: none !important;
+    border:1px solid #6c757d;
+}
+
+#showPwd{
+    color: #6c757d;
+    position: absolute;
+    right: 8px;
+    top: 15px;
+    /* align-self: center; */
+}
+
+.userIcon{
+    background-color: #FF5160;
+    color: white;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: -22px;
+    position: absolute;
+    box-shadow: 0 3px 3px  rgba(172, 169, 169, 0.685);
+}

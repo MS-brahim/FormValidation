@@ -1,5 +1,5 @@
 # FormValidation
 
-![alt text](./Screenshot_1.jpg?raw=true)
+<img src="Screenshot_1.jpg" width="100%">
 
 

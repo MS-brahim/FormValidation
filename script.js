@@ -9,10 +9,6 @@ const form = document.getElementById('formId');
 const checkBox = document.getElementById('checkBox');
 
 // Validation form 
-form.addEventListener('submit', (e) =>{
-console.log("dcdcd");
-})
-
 form.addEventListener('keyup', (e) => {
     e.preventDefault()  
 console.log(full_name.value.length);

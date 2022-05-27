@@ -9,12 +9,17 @@ const form = document.getElementById('formId');
 const checkBox = document.getElementById('checkBox');
 
 // Validation form 
-form.addEventListener('submit', (e) => {
-    e.preventDefault()  
+form.addEventListener('submit', (e) =>{
+console.log("dcdcd");
+})
 
+form.addEventListener('keyup', (e) => {
+    e.preventDefault()  
+console.log(full_name.value.length);
     // Check if full name is empty or null
-    if (full_name.value =="" || full_name.value ==null) {
-        return setError(full_name, 'red');
+    if (full_name.value.length < 8) {
+        setError(full_name, 'red');
+        return;
     }else {
         setSuccess(full_name, 'green')
     }
@@ -31,12 +36,10 @@ form.addEventListener('submit', (e) => {
     }
 
     // Check if full password is empty or null
-    if (password.value == "" || password.value ==null) {
-        return setError(password, 'red')
-    }else if (password.value.length < 4 || password.value.length > 6 ) {
-        // console.log(password.value.length);
-        passwordHelp.innerHTML = 'Le mot de passe doit comporter entre 4 et 6 caractères!';
-        return setError(password, 'red');
+    if ( password.value.length < 8) {
+        passwordHelp.innerHTML = 'Le mot de passe doit comporter entre 4 et 8 caractères!';
+        setError(password, 'red');
+        return;
     } else {
         setSuccess(password, 'green')
         passwordHelp.style.display = 'none';
